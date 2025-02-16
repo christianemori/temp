@@ -28,18 +28,28 @@
 <style>
   body {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
     background-color: #000; 
     color: #fff; 
     overflow: hidden; 
   }
-  div {
-    text-align: center;
+  .left-side {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
   }
-  img.avatar {
+  .right-side {
+    width: 50vw;
+    height: 100vh;
+    background: url('https://files.catbox.moe/wf2ri8.jpg') no-repeat center center/cover;
+  }
+  .content {
+    text-align: left;
+  }
+  .avatar {
     border-radius: 50%; 
   }
   .subheading {
@@ -53,9 +63,12 @@
 </style>
 </head>
 <body>
-  <div>
-    <img class="avatar" href="mailto:c@conart.ist/" src="https://files.catbox.moe/wf2ri8.jpg" width="200" height="200" alt="Avatar">
-    <a class="subheading" href="https://instagram.com/orie/">“uneasy lies the head that wears a crown„</a>
+  <div class="left-side">
+    <div class="content">
+      <img class="avatar" src="https://files.catbox.moe/wf2ri8.jpg" width="200" height="200" alt="Avatar">
+      <a class="subheading" href="https://instagram.com/orie/">“uneasy lies the head that wears a crown„</a>
+    </div>
   </div>
+  <div class="right-side"></div>
 </body>
 </html>
